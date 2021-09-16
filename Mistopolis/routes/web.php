@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('signin', 'AuthController@signin');
+Route::get('signup', 'AuthController@signup');
+Route::post('login', 'AuthController@login');
